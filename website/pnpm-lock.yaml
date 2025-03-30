@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@theguild/components':
-        specifier: 9.4.1
-        version: 9.4.1(@theguild/tailwind-config@0.6.3(postcss-import@16.1.0(postcss@8.5.3))(postcss-lightningcss@1.0.1(postcss@8.5.3))(tailwindcss@3.4.17))(@types/react@19.0.12)(acorn@8.14.1)(next@15.2.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.2)
+        specifier: 9.5.0
+        version: 9.5.0(@theguild/tailwind-config@0.6.3(postcss-import@16.1.0(postcss@8.5.3))(postcss-lightningcss@1.0.1(postcss@8.5.3))(tailwindcss@3.4.17))(@types/react@19.0.12)(acorn@8.14.1)(next@15.2.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.2)
       next:
         specifier: ^15.0.0
         version: 15.2.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -841,8 +841,8 @@ packages:
   '@tanstack/virtual-core@3.13.5':
     resolution: {integrity: sha512-gMLNylxhJdUlfRR1G3U9rtuwUh2IjdrrniJIDcekVJN3/3i+bluvdMi3+eodnxzJq5nKnxnigo9h0lIpaqV6HQ==}
 
-  '@theguild/components@9.4.1':
-    resolution: {integrity: sha512-eD1d6Ycg7GBwVQ2Wxs3mKEGkvUK02en/r9bWKx3smJhmXZ5H+HXj4FkNcsYvQdcXfa4szoowomLThXzKXKfxCA==}
+  '@theguild/components@9.5.0':
+    resolution: {integrity: sha512-NNvaxymlwyX5SQKGSUMDeIZ0nfqoDgwak39sL79wiuEzUmwRU6WAe+QpSDPIC3529Iuf5lAMqi5x6UoPn5yStA==}
     peerDependencies:
       '@theguild/tailwind-config': ^0.6.2
       next: ^13 || ^14 || ^15.0.0
@@ -4442,7 +4442,7 @@ snapshots:
 
   '@tanstack/virtual-core@3.13.5': {}
 
-  '@theguild/components@9.4.1(@theguild/tailwind-config@0.6.3(postcss-import@16.1.0(postcss@8.5.3))(postcss-lightningcss@1.0.1(postcss@8.5.3))(tailwindcss@3.4.17))(@types/react@19.0.12)(acorn@8.14.1)(next@15.2.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.2)':
+  '@theguild/components@9.5.0(@theguild/tailwind-config@0.6.3(postcss-import@16.1.0(postcss@8.5.3))(postcss-lightningcss@1.0.1(postcss@8.5.3))(tailwindcss@3.4.17))(@types/react@19.0.12)(acorn@8.14.1)(next@15.2.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.2)':
     dependencies:
       '@giscus/react': 3.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@next/bundle-analyzer': 15.1.5
