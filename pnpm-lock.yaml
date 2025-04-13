@@ -15,8 +15,8 @@ importers:
         specifier: ^8.0.0
         version: 8.0.18(graphql@16.10.0)
       '@graphql-tools/load':
-        specifier: ^8.0.0
-        version: 8.0.19(graphql@16.10.0)
+        specifier: ^8.1.0
+        version: 8.1.0(graphql@16.10.0)
       '@graphql-tools/merge':
         specifier: ^9.0.0
         version: 9.0.24(graphql@16.10.0)
@@ -456,8 +456,8 @@ packages:
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/load@8.0.19':
-    resolution: {integrity: sha512-YA3T9xTy2B6dNTnqsCzqSclA23j4v3p3A2Vdn0jEbZPGLMRPzWW8MJu2nlgQ8uua1IpYD/J8xgyrFxxAo3qPmQ==}
+  '@graphql-tools/load@8.1.0':
+    resolution: {integrity: sha512-OGfOm09VyXdNGJS/rLqZ6ztCiG2g6AMxhwtET8GZXTbnjptFc17GtKwJ3Jv5w7mjJ8dn0BHydvIuEKEUK4ciYw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
@@ -2603,7 +2603,7 @@ snapshots:
       tslib: 2.8.1
       unixify: 1.0.0
 
-  '@graphql-tools/load@8.0.19(graphql@16.10.0)':
+  '@graphql-tools/load@8.1.0(graphql@16.10.0)':
     dependencies:
       '@graphql-tools/schema': 10.0.23(graphql@16.10.0)
       '@graphql-tools/utils': 10.8.6(graphql@16.10.0)
