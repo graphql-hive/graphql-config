@@ -1,5 +1,21 @@
 # Change log
 
+## 5.1.4
+
+### Patch Changes
+
+- [#1631](https://github.com/graphql-hive/graphql-config/pull/1631) [`790cfc1`](https://github.com/graphql-hive/graphql-config/commit/790cfc1df60ad2738b0c0ed71436c4bbbfbc248c) Thanks [@aaronadamsCA](https://github.com/aaronadamsCA)! - support top-level await
+
+- [#1499](https://github.com/graphql-hive/graphql-config/pull/1499) [`7f80597`](https://github.com/graphql-hive/graphql-config/commit/7f80597838415fe291a92d56a5ce552e91407a9e) Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+
+  - Updated dependency [`minimatch@^10.0.0` ↗︎](https://www.npmjs.com/package/minimatch/v/10.0.0) (from `^9.0.5`, in `dependencies`)
+
+- [#1574](https://github.com/graphql-hive/graphql-config/pull/1574) [`c8efc31`](https://github.com/graphql-hive/graphql-config/commit/c8efc31f2697491b8b7dadc55b176949a09592b9) Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+
+  - Updated dependency [`cosmiconfig@^9.0.0` ↗︎](https://www.npmjs.com/package/cosmiconfig/v/9.0.0) (from `^8.1.0`, in `dependencies`)
+
+- [#1725](https://github.com/graphql-hive/graphql-config/pull/1725) [`3f9ebc7`](https://github.com/graphql-hive/graphql-config/commit/3f9ebc702768dcbe5829940a78e618dc3ce0266d) Thanks [@eddeee888](https://github.com/eddeee888)! - Bump @graphql-tools/load to ^8.1.0 to support better error handling
+
 ## 5.1.3
 
 ### Patch Changes
