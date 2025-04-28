@@ -1,5 +1,11 @@
 # Change log
 
+## 5.1.5
+
+### Patch Changes
+
+- [#1727](https://github.com/graphql-hive/graphql-config/pull/1727) [`4f2bda9`](https://github.com/graphql-hive/graphql-config/commit/4f2bda98d8b00b0f015c260885202fd53550da9f) Thanks [@eddeee888](https://github.com/eddeee888)! - Revert minimatch and cosmiconfig versions
+
 ## 5.1.4
 
 ### Patch Changes
