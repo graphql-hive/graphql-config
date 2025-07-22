@@ -79,7 +79,7 @@
     "cosmiconfig-toml-loader": "1.0.0",
     "del": "8.0.0",
     "eslint": "9.24.0",
-    "eslint-config-prettier": "10.1.1",
+    "eslint-config-prettier": "10.1.8",
     "graphql": "16.10.0",
     "husky": "9.1.7",
     "lint-staged": "15.5.0",
