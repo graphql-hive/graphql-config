@@ -161,7 +161,10 @@ export class GraphQLProjectConfig {
       return [];
     }
 
-    return this._extensionsRegistry.loaders.documents.loadDocuments(pointer, options);
+    return this._extensionsRegistry.loaders.documents.loadDocuments(pointer, {
+      ...options,
+      ignore: options?.ignore ? options?.ignore : this.exclude,
+    });
   }
 
   loadDocumentsSync(pointer: Pointer, options?: LoadTypedefsOptions): Source[] {
@@ -169,7 +172,10 @@ export class GraphQLProjectConfig {
       return [];
     }
 
-    return this._extensionsRegistry.loaders.documents.loadDocumentsSync(pointer, options);
+    return this._extensionsRegistry.loaders.documents.loadDocumentsSync(pointer, {
+      ...options,
+      ignore: options?.ignore ? options?.ignore : this.exclude,
+    });
   }
 
   // Rest
