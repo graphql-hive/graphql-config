@@ -135,6 +135,9 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild"
-    ]
+    ],
+    "overrides": {
+      "glob": "11.1.0"
+    }
   }
 }
