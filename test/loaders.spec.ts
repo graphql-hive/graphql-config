@@ -145,4 +145,37 @@ describe('override', () => {
 
     expect(loadSchemaSync).toBeCalledWith('anything', expectedOptions);
   });
+
+  test('flattens nested config options', async () => {
+    const registry = new LoadersRegistry({ cwd: __dirname });
+    const customLoader = new CustomLoader(differentSchema);
+    const customOptions = {
+      config: {
+        inputValueDeprecation: true,
+      },
+    } as Partial<LoadSchemaOptions> & { config: { inputValueDeprecation: boolean } };
+
+    registry.override([customLoader]);
+
+    await registry.loadSchema('anything', null, customOptions as Partial<LoadSchemaOptions>);
+    registry.loadSchemaSync('anything', null, customOptions as Partial<LoadSchemaOptions>);
+
+    expect(loadSchema).toHaveBeenLastCalledWith(
+      'anything',
+      expect.objectContaining({
+        cwd: __dirname,
+        loaders: [customLoader],
+        inputValueDeprecation: true,
+      }),
+    );
+
+    expect(loadSchemaSync).toHaveBeenLastCalledWith(
+      'anything',
+      expect.objectContaining({
+        cwd: __dirname,
+        loaders: [customLoader],
+        inputValueDeprecation: true,
+      }),
+    );
+  });
 });

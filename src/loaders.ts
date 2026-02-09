@@ -115,10 +115,17 @@ export class LoadersRegistry {
   }
 
   private createOptions<T extends object>(options?: T) {
+    const optionsWithConfig = options as T & { config?: object };
+    const nestedConfig =
+      optionsWithConfig && typeof optionsWithConfig.config === 'object'
+        ? optionsWithConfig.config
+        : undefined;
+
     return {
       loaders: Array.from(this._loaders),
       cwd: this.cwd,
       ...options,
+      ...nestedConfig,
     };
   }
 
