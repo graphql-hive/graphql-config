@@ -13,7 +13,7 @@ jobs:
       installDependencies: true
       packageManager: 'pnpm'
     secrets:
-      githubToken: ${{ secrets.GUILD_BOT_TOKEN }}
+      githubToken: ${{ secrets.GITHUB_TOKEN }}
 
   canary:
     uses: the-guild-org/shared-config/.github/workflows/release-snapshot.yml@main
