@@ -36,8 +36,8 @@ importers:
         specifier: ^2.0.0
         version: 2.4.2
       minimatch:
-        specifier: ^9.0.5
-        version: 9.0.5
+        specifier: ^10.0.0
+        version: 10.1.1
       string-env-interpolation:
         specifier: ^1.0.1
         version: 1.0.1
