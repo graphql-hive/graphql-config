@@ -1,5 +1,14 @@
 # Change log
 
+## 5.1.6
+
+### Patch Changes
+
+- [#1752](https://github.com/graphql-hive/graphql-config/pull/1752) [`362edd2`](https://github.com/graphql-hive/graphql-config/commit/362edd2bba0d26c89f3daf27e9cce8335508541c) Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+
+  - Updated dependency [`@graphql-tools/url-loader@^9.0.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/url-loader/v/9.0.0) (from `^8.0.0`, in `dependencies`)
+  - Updated dependency [`@graphql-tools/utils@^11.0.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/utils/v/11.0.0) (from `^10.0.0`, in `dependencies`)
+
 ## 5.1.5
 
 ### Patch Changes
