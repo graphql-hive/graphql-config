@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@theguild/components':
-        specifier: 9.8.0
-        version: 9.8.0(@theguild/tailwind-config@0.6.3(postcss-import@16.1.1(postcss@8.5.3))(postcss-lightningcss@1.0.1(postcss@8.5.3))(tailwindcss@3.4.17))(@types/react@19.1.8)(acorn@8.14.1)(next@15.5.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)
+        specifier: 9.11.3
+        version: 9.11.3(@theguild/tailwind-config@0.6.4(postcss-import@16.1.1(postcss@8.5.3))(postcss-lightningcss@1.0.1(postcss@8.5.3))(tailwindcss@3.4.17))(@types/react@19.1.8)(acorn@8.14.1)(next@15.5.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)
       next:
         specifier: ^15.3.3
         version: 15.5.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -25,11 +25,11 @@ importers:
         version: 19.1.0(react@19.1.0)
     devDependencies:
       '@theguild/tailwind-config':
-        specifier: 0.6.3
-        version: 0.6.3(postcss-import@16.1.1(postcss@8.5.3))(postcss-lightningcss@1.0.1(postcss@8.5.3))(tailwindcss@3.4.17)
+        specifier: 0.6.4
+        version: 0.6.4(postcss-import@16.1.1(postcss@8.5.3))(postcss-lightningcss@1.0.1(postcss@8.5.3))(tailwindcss@3.4.17)
       '@types/node':
-        specifier: 22.14.0
-        version: 22.14.0
+        specifier: 22.19.13
+        version: 22.19.13
       '@types/react':
         specifier: 19.1.8
         version: 19.1.8
@@ -879,8 +879,8 @@ packages:
   '@tanstack/virtual-core@3.13.5':
     resolution: {integrity: sha512-gMLNylxhJdUlfRR1G3U9rtuwUh2IjdrrniJIDcekVJN3/3i+bluvdMi3+eodnxzJq5nKnxnigo9h0lIpaqV6HQ==}
 
-  '@theguild/components@9.8.0':
-    resolution: {integrity: sha512-0oNquz+TSR00d38BB9oEavlhmAu4tSK3IZjt8h6FXs/v3d2J+pxBaA0eInCM6nGtXcRzQ5D43mObW1aQBktpSA==}
+  '@theguild/components@9.11.3':
+    resolution: {integrity: sha512-b1G0AT19Dw6POWrYwHk5XV4hspmz0ARmpv+qWvS31l8OvDhrOpBCfs7Ts9LLDgwsMI+0lhfJWXsC7CGEk37NOQ==}
     peerDependencies:
       '@theguild/tailwind-config': ^0.6.3
       next: ^13 || ^14 || ^15.0.0
@@ -895,8 +895,8 @@ packages:
   '@theguild/remark-npm2yarn@0.3.3':
     resolution: {integrity: sha512-ma6DvR03gdbvwqfKx1omqhg9May/VYGdMHvTzB4VuxkyS7KzfZ/lzrj43hmcsggpMje0x7SADA/pcMph0ejRnA==}
 
-  '@theguild/tailwind-config@0.6.3':
-    resolution: {integrity: sha512-kmHHBnGRPiFtyBNuWCuKdC+kymh16OuFTD+R/Yb3yo+mNFJlOzGYdcu2ay6g1M+9+OlwSffifD2Zo97AZUwaSg==}
+  '@theguild/tailwind-config@0.6.4':
+    resolution: {integrity: sha512-7zscZk+L9x0Z8tMQGtVBC+1usAJ6Nz7hJYCmKzwXyMA4paXr/ghCeMArF9hkIkBp/GH+gKpR+ERaHwmqmvqfVg==}
     peerDependencies:
       postcss-import: ^16.1.0
       postcss-lightningcss: ^1.0.1
@@ -1034,8 +1034,8 @@ packages:
   '@types/nlcst@2.0.3':
     resolution: {integrity: sha512-vSYNSDe6Ix3q+6Z7ri9lyWqgGhJTmzRjZRqyq15N0Z/1/UnVsno9G/N40NBijoYx2seFDIl0+B2mgAb9mezUCA==}
 
-  '@types/node@22.14.0':
-    resolution: {integrity: sha512-Kmpl+z84ILoG+3T/zQFyAJsU6EPTmOCj8/2+83fSN6djd6I4o7uOuGIH6vq3PrjY5BGitSbFuMN18j3iknubbA==}
+  '@types/node@22.19.13':
+    resolution: {integrity: sha512-akNQMv0wW5uyRpD2v2IEyRSZiR+BeGuoB6L310EgGObO44HSMNT8z1xzio28V8qOrgYaopIDNA18YgdXd+qTiw==}
 
   '@types/react@19.1.8':
     resolution: {integrity: sha512-AwAfQ2Wa5bCx9WP8nZL2uMZWod7J7/JSplxbTmBQ5ms6QpqNYm672H0Vu9ZVKVngQ+ii4R/byguVEUZQyeg44g==}
@@ -3287,11 +3287,6 @@ packages:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
 
-  semver@7.7.2:
-    resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
-    engines: {node: '>=10'}
-    hasBin: true
-
   semver@7.7.4:
     resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
     engines: {node: '>=10'}
@@ -4522,14 +4517,14 @@ snapshots:
 
   '@tanstack/virtual-core@3.13.5': {}
 
-  '@theguild/components@9.8.0(@theguild/tailwind-config@0.6.3(postcss-import@16.1.1(postcss@8.5.3))(postcss-lightningcss@1.0.1(postcss@8.5.3))(tailwindcss@3.4.17))(@types/react@19.1.8)(acorn@8.14.1)(next@15.5.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)':
+  '@theguild/components@9.11.3(@theguild/tailwind-config@0.6.4(postcss-import@16.1.1(postcss@8.5.3))(postcss-lightningcss@1.0.1(postcss@8.5.3))(tailwindcss@3.4.17))(@types/react@19.1.8)(acorn@8.14.1)(next@15.5.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)':
     dependencies:
       '@giscus/react': 3.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@next/bundle-analyzer': 15.1.5
       '@radix-ui/react-accordion': 1.2.3(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@radix-ui/react-icons': 1.3.2(react@19.1.0)
       '@radix-ui/react-navigation-menu': 1.2.5(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@theguild/tailwind-config': 0.6.3(postcss-import@16.1.1(postcss@8.5.3))(postcss-lightningcss@1.0.1(postcss@8.5.3))(tailwindcss@3.4.17)
+      '@theguild/tailwind-config': 0.6.4(postcss-import@16.1.1(postcss@8.5.3))(postcss-lightningcss@1.0.1(postcss@8.5.3))(tailwindcss@3.4.17)
       clsx: 2.1.1
       fuzzy: 0.1.3
       next: 15.5.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -4539,7 +4534,7 @@ snapshots:
       react-dom: 19.1.0(react@19.1.0)
       react-paginate: 8.2.0(react@19.1.0)
       react-player: 2.16.0(react@19.1.0)
-      semver: 7.7.2
+      semver: 7.7.4
       tailwind-merge: 2.6.0
       unist-util-visit: 5.0.0
     transitivePeerDependencies:
@@ -4566,7 +4561,7 @@ snapshots:
       npm-to-yarn: 3.0.1
       unist-util-visit: 5.0.0
 
-  '@theguild/tailwind-config@0.6.3(postcss-import@16.1.1(postcss@8.5.3))(postcss-lightningcss@1.0.1(postcss@8.5.3))(tailwindcss@3.4.17)':
+  '@theguild/tailwind-config@0.6.4(postcss-import@16.1.1(postcss@8.5.3))(postcss-lightningcss@1.0.1(postcss@8.5.3))(tailwindcss@3.4.17)':
     dependencies:
       '@tailwindcss/container-queries': 0.1.1(tailwindcss@3.4.17)
       postcss-import: 16.1.1(postcss@8.5.3)
@@ -4729,7 +4724,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/node@22.14.0':
+  '@types/node@22.19.13':
     dependencies:
       undici-types: 6.21.0
 
@@ -7730,8 +7725,6 @@ snapshots:
       compute-scroll-into-view: 3.1.1
 
   semver@6.3.1: {}
-
-  semver@7.7.2: {}
 
   semver@7.7.4: {}
 
