@@ -1,7 +1,4 @@
-[![GraphQLConf 2024 Banner: September 10-12, San Francisco. Hosted by the GraphQL Foundation](https://github.com/user-attachments/assets/bdb8cd5d-5186-4ece-b06b-b00a499b7868)](https://graphql.org/conf/2024/?utm_source=github&utm_medium=graphql_config&utm_campaign=readme)
-
-<!-- Uncomment when we remove GraphQL Conf banner -->
-<!-- ![GraphQL Config](https://i.imgur.com/hw5tXw2.gif 'GraphQL Config') -->
+![GraphQL Config](https://i.imgur.com/hw5tXw2.gif 'GraphQL Config')
 
 [![npm version](https://badge.fury.io/js/graphql-config.svg)](https://npmjs.com/package/graphql-config)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
