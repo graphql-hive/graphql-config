@@ -88,8 +88,8 @@ importers:
         specifier: 5.0.0
         version: 5.0.0
       parent-module:
-        specifier: 3.1.0
-        version: 3.1.0
+        specifier: 3.2.0
+        version: 3.2.0
       prettier:
         specifier: 3.5.3
         version: 3.5.3
@@ -1721,8 +1721,8 @@ packages:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
 
-  parent-module@3.1.0:
-    resolution: {integrity: sha512-FX4TpKXX6CesSm1D9y5IcF0/KdDjP/w0c1AKqreGZne2QyWiPWHfoApMaJl8zvH3DTh+xtVmlLIUqSSoPYjqLQ==}
+  parent-module@3.2.0:
+    resolution: {integrity: sha512-2Ik9vslIJdx+teObUMPbYd5ONHrTh0EH6o88qNQqU2o+JKPR13V5cmoWmCBn3G7V5pyomexaZixyQoHfzl5E4g==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   parse-json@5.2.0:
@@ -3938,7 +3938,7 @@ snapshots:
     dependencies:
       callsites: 3.1.0
 
-  parent-module@3.1.0:
+  parent-module@3.2.0:
     dependencies:
       callsites: 4.2.0
 
