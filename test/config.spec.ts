@@ -1,5 +1,6 @@
 import { buildSchema, buildASTSchema } from 'graphql';
 import path from 'path';
+import { vi } from 'vitest';
 import { TempDir } from './utils/temp-dir';
 import { runTests } from './utils/runner';
 import { loadConfig, loadConfigSync, ConfigNotFoundError, GraphQLConfig } from 'graphql-config';
@@ -274,6 +275,67 @@ runTests({ async: loadConfig, sync: loadConfigSync })((load, mode) => {
       // should point to a next project that includes the file
       expect(config.getProjectForFile('./foo/ignored/component.ts').name).toBe('bar');
     });
+
+    test.each(['loadDocumentsSync', 'loadDocuments'] as const)('%s uses exclude', async (method) => {
+      temp.createFile(
+        '.graphqlrc',
+        `
+        projects:
+          foo:
+            schema: ./foo.graphql
+            include: ./foo/*.ts
+            exclude: ./foo/ignored/**
+        `,
+      );
+
+      const config = await load({ rootDir: temp.dir });
+
+      const project = config.getProject('foo');
+
+      const loadDocumentsSyncSpy = vi
+        .spyOn(project['_extensionsRegistry'].loaders.documents, method)
+        .mockReturnValue([]);
+
+      await project[method]('./**/*');
+
+      expect(loadDocumentsSyncSpy).toHaveBeenCalledWith('./**/*', {
+        ignore: './foo/ignored/**',
+      });
+
+      loadDocumentsSyncSpy.mockRestore();
+    });
+
+    test.each(['loadDocumentsSync', 'loadDocuments'] as const)(
+      '%s respects options.ignore when provided (overrides exclude)',
+      async (method) => {
+        temp.createFile(
+          '.graphqlrc',
+          `
+        schema: ./schema.graphql
+        documents: ./**/*.graphql
+        exclude:
+          - "**/excluded/**"
+      `,
+        );
+
+        const config = await load({ rootDir: temp.dir });
+        const project = config.getDefault();
+
+        const loadDocumentsSyncSpy = vi
+          .spyOn(project['_extensionsRegistry'].loaders.documents, method)
+          .mockReturnValue([]);
+
+        // Call with custom ignore - should override exclude
+        await project[method]('./**/*.graphql', { ignore: '**/custom-ignored/**' });
+
+        // Verify it was called with custom ignore (NOT the exclude from config)
+        expect(loadDocumentsSyncSpy).toHaveBeenCalledWith('./**/*.graphql', {
+          ignore: '**/custom-ignored/**',
+        });
+
+        loadDocumentsSyncSpy.mockRestore();
+      },
+    );
 
     test('customizable config name', async () => {
       temp.createFile(schemaFilename, testSDL);
