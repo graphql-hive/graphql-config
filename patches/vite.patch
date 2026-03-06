@@ -1,0 +1,13 @@
+diff --git a/dist/node/index.d.ts b/dist/node/index.d.ts
+index f725d4ac42a2dcf9146818ba0a196d005d570fb0..1add103d537c46147a99531a0e50ac0354462af3 100644
+--- a/dist/node/index.d.ts
++++ b/dist/node/index.d.ts
+@@ -2,7 +2,7 @@
+ import { PluginHooks, RollupError, SourceMap, ModuleInfo, PartialResolvedId, RollupOptions, InputOption, ModuleFormat, WatcherOptions, RollupOutput, RollupWatcher, PluginContext, InputOptions, CustomPluginOptions, LoadResult, SourceDescription, PluginContextMeta, RollupLog, OutputBundle, OutputChunk, ObjectHook, ResolveIdResult, TransformPluginContext, ExistingRawSourceMap, SourceMapInput, GetManualChunk } from 'rollup';
+ import * as rollup from 'rollup';
+ export { rollup as Rollup };
+-export { parseAst, parseAstAsync } from 'rollup/parseAst';
++export { parseAst, parseAstAsync } from 'rollup/dist/parseAst.js';
+ import * as http from 'node:http';
+ import { OutgoingHttpHeaders, ClientRequestArgs, IncomingMessage, ClientRequest, Agent, Server, ServerResponse } from 'node:http';
+ import { Http2SecureServer } from 'node:http2';

@@ -86,6 +86,7 @@
     "make-dir": "5.1.0",
     "parent-module": "3.2.0",
     "prettier": "3.5.3",
+    "rollup": "4.59.0",
     "rimraf": "6.0.1",
     "ts-node": "10.9.2",
     "tsx": "4.19.3",
@@ -138,6 +139,9 @@
     ],
     "overrides": {
       "glob": "11.1.0"
+    },
+    "patchedDependencies": {
+      "vite": "patches/vite.patch"
     }
   }
 }

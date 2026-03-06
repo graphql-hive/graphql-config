@@ -2,9 +2,9 @@
   "compilerOptions": {
     "module": "esnext",
     "target": "es2021",
-    "lib": ["es2021"],
+    "lib": ["es2021", "dom"],
     "outDir": "dist",
-    "skipLibCheck": true,
+    "skipLibCheck": false,
     "declaration": true,
     "declarationMap": true,
     "importHelpers": true,
