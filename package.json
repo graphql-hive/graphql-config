@@ -84,7 +84,7 @@
     "husky": "9.1.7",
     "lint-staged": "15.5.2",
     "make-dir": "5.0.0",
-    "parent-module": "3.1.0",
+    "parent-module": "3.2.0",
     "prettier": "3.5.3",
     "rimraf": "6.0.1",
     "ts-node": "10.9.2",
