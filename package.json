@@ -70,7 +70,7 @@
     "tslib": "^2.4.0"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "0.5.2",
+    "@changesets/changelog-github": "0.6.0",
     "@changesets/cli": "2.30.0",
     "@types/node": "22.19.13",
     "@typescript-eslint/eslint-plugin": "8.38.0",
