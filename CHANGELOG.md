@@ -5,7 +5,6 @@
 ### Patch Changes
 
 - [#1752](https://github.com/graphql-hive/graphql-config/pull/1752) [`362edd2`](https://github.com/graphql-hive/graphql-config/commit/362edd2bba0d26c89f3daf27e9cce8335508541c) Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency [`@graphql-tools/url-loader@^9.0.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/url-loader/v/9.0.0) (from `^8.0.0`, in `dependencies`)
   - Updated dependency [`@graphql-tools/utils@^11.0.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/utils/v/11.0.0) (from `^10.0.0`, in `dependencies`)
 
@@ -22,11 +21,9 @@
 - [#1631](https://github.com/graphql-hive/graphql-config/pull/1631) [`790cfc1`](https://github.com/graphql-hive/graphql-config/commit/790cfc1df60ad2738b0c0ed71436c4bbbfbc248c) Thanks [@aaronadamsCA](https://github.com/aaronadamsCA)! - support top-level await
 
 - [#1499](https://github.com/graphql-hive/graphql-config/pull/1499) [`7f80597`](https://github.com/graphql-hive/graphql-config/commit/7f80597838415fe291a92d56a5ce552e91407a9e) Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency [`minimatch@^10.0.0` ↗︎](https://www.npmjs.com/package/minimatch/v/10.0.0) (from `^9.0.5`, in `dependencies`)
 
 - [#1574](https://github.com/graphql-hive/graphql-config/pull/1574) [`c8efc31`](https://github.com/graphql-hive/graphql-config/commit/c8efc31f2697491b8b7dadc55b176949a09592b9) Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency [`cosmiconfig@^9.0.0` ↗︎](https://www.npmjs.com/package/cosmiconfig/v/9.0.0) (from `^8.1.0`, in `dependencies`)
 
 - [#1725](https://github.com/graphql-hive/graphql-config/pull/1725) [`3f9ebc7`](https://github.com/graphql-hive/graphql-config/commit/3f9ebc702768dcbe5829940a78e618dc3ce0266d) Thanks [@eddeee888](https://github.com/eddeee888)! - Bump @graphql-tools/load to ^8.1.0 to support better error handling
@@ -54,7 +51,6 @@
 ### Minor Changes
 
 - [#1459](https://github.com/kamilkisiela/graphql-config/pull/1459) [`5eca929`](https://github.com/kamilkisiela/graphql-config/commit/5eca92966fece546d39db39e647158a1081cee46) Thanks [@dimaMachina](https://github.com/dimaMachina)! - - fix loading esm js config
-
   - add support of `*.mjs` configs
 
 ### Patch Changes
@@ -88,11 +84,9 @@
 ### Patch Changes
 
 - [#1294](https://github.com/kamilkisiela/graphql-config/pull/1294) [`1d11dbd`](https://github.com/kamilkisiela/graphql-config/commit/1d11dbd25e581cb6c0e216c3e2917ab7f47d6847) Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency [`jiti@1.18.2` ↗︎](https://www.npmjs.com/package/jiti/v/1.18.2) (from `1.17.1`, in `dependencies`)
 
 - [#1348](https://github.com/kamilkisiela/graphql-config/pull/1348) [`42ffb2e`](https://github.com/kamilkisiela/graphql-config/commit/42ffb2e82d9d7a170ae1a9b9f52cdcd396046d80) Thanks [@n1ru4l](https://github.com/n1ru4l)! - dependencies updates:
-
   - Updated dependency [`@graphql-tools/graphql-file-loader@^8.0.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/graphql-file-loader/v/8.0.0) (from `^7.3.7`, in `dependencies`)
   - Updated dependency [`@graphql-tools/json-file-loader@^8.0.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/json-file-loader/v/8.0.0) (from `^7.3.7`, in `dependencies`)
   - Updated dependency [`@graphql-tools/load@^8.0.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/load/v/8.0.0) (from `^7.5.5`, in `dependencies`)
@@ -101,7 +95,6 @@
   - Updated dependency [`@graphql-tools/utils@^10.0.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/utils/v/10.0.0) (from `^9.0.0`, in `dependencies`)
 
 - [#1358](https://github.com/kamilkisiela/graphql-config/pull/1358) [`d6ead74`](https://github.com/kamilkisiela/graphql-config/commit/d6ead7426d3e9a7e2309b1939bfa66ae45e9e7d9) Thanks [@n1ru4l](https://github.com/n1ru4l)! - dependencies updates:
-
   - Updated dependency [`cosmiconfig@^8.1.0` ↗︎](https://www.npmjs.com/package/cosmiconfig/v/8.1.0) (from `8.1.0`, in `dependencies`)
   - Updated dependency [`jiti@^1.18.2` ↗︎](https://www.npmjs.com/package/jiti/v/1.18.2) (from `1.18.2`, in `dependencies`)
   - Updated dependency [`minimatch@^4.2.3` ↗︎](https://www.npmjs.com/package/minimatch/v/4.2.3) (from `4.2.3`, in `dependencies`)
@@ -138,7 +131,6 @@
 ### Patch Changes
 
 - [#1126](https://github.com/kamilkisiela/graphql-config/pull/1126) [`cc781c4`](https://github.com/kamilkisiela/graphql-config/commit/cc781c4cf3bd056a75081108e1b13efd1b3d29ed) Thanks [@n1ru4l](https://github.com/n1ru4l)! - dependencies updates:
-
   - Updated dependency [`cosmiconfig-typescript-loader@^4.0.0` ↗︎](https://www.npmjs.com/package/cosmiconfig-typescript-loader/v/null) (from `^3.1.0`, in `dependencies`)
 
 ## 4.3.4
@@ -146,7 +138,6 @@
 ### Patch Changes
 
 - [#1103](https://github.com/kamilkisiela/graphql-config/pull/1103) [`2c568f1`](https://github.com/kamilkisiela/graphql-config/commit/2c568f1ee2d45bc46613b86b12fcfab82b1393aa) Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Added dependency [`tslib@^2.4.0` ↗︎](https://www.npmjs.com/package/tslib/v/null) (to `dependencies`)
 
 * [#1103](https://github.com/kamilkisiela/graphql-config/pull/1103) [`2c568f1`](https://github.com/kamilkisiela/graphql-config/commit/2c568f1ee2d45bc46613b86b12fcfab82b1393aa) Thanks [@renovate](https://github.com/apps/renovate)! - Proper ESM/CJS support on Node.js
