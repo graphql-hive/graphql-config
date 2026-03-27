@@ -87,7 +87,7 @@
     "parent-module": "3.2.0",
     "prettier": "3.8.1",
     "rollup": "4.59.0",
-    "rimraf": "6.0.1",
+    "rimraf": "6.1.3",
     "ts-node": "10.9.2",
     "tsx": "4.19.3",
     "typescript": "5.8.3",
