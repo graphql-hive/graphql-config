@@ -1,0 +1,4 @@
+{
+  "pages": ["load-config", "extensions", "loaders", "graphql-config", "graphql-project-config"],
+  "title": "I'm a Library Author"
+}

@@ -1,17 +1,31 @@
-# Website
+# GraphQL Config docs
 
-### Installation
+The documentation at [the-guild.dev/graphql/config](https://the-guild.dev/graphql/config) is
+authored here and rendered by [the-guild-org/website](https://github.com/the-guild-org/website),
+which fetches this folder at build time. Nothing in this folder is built or deployed on its own.
 
-Run `pnpm install` in the root folder
+## Layout
 
-### Local Development
+| Path       | What it is                                                                                                      |
+| ---------- | --------------------------------------------------------------------------------------------------------------- |
+| `content/` | The documentation, one folder per section (docs ). Folder order and titles come from each folder's `meta.json`. |
+| `assets/`  | Images referenced from pages as `/assets/...`.                                                                  |
 
-Run `pnpm start` in the website root
+The `/changelog` page is rendered from `CHANGELOG.md`; nothing to maintain here.
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+## Writing pages
 
-### Build
+- Frontmatter: `title` (required) and `description`. The site renders the title as the page
+  heading, so pages do not start with an `# H1`. Use `sidebarTitle` when the sidebar should show a
+  shorter label.
+- Ordering: each folder's `meta.json` lists `pages` in display order; a folder's `title` is its
+  sidebar label. Pages not listed are built but hidden from the sidebar.
+- Components available without importing: `Callout`, `Tabs` / `Tabs.Tab`, `Cards`, `FileTree`. Name
+  code blocks with ` ```ts title="example.ts" `, and use ` ```sh npm2yarn ` for install commands.
+- Links between pages are root-relative to this product: `/docs/...`.
 
-Run `pnpm build` in the website root
+## Previewing changes
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Every same-repository pull request that touches this folder gets a preview at
+`https://config-pr-<number>.guild-dev-website.pages.dev/graphql/config` (linked in a PR comment
+within about ten minutes). Merges to `master` redeploy the live docs automatically.
