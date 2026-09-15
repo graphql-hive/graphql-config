@@ -13,18 +13,13 @@ jobs:
     name: Node ${{matrix.node_version}} on ${{matrix.os}} (graphql ${{matrix.graphql_version}})
     runs-on: ${{matrix.os}}
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest]
-        node_version: [18, 20, 22, 23]
-        graphql_version: [16]
-        include:
-          # graphql 17 requires Node ^22 || ^24, so only test it on the Node 22 entry
-          - os: ubuntu-latest
-            node_version: 22
-            graphql_version: 17
-          - os: windows-latest
-            node_version: 22
-            graphql_version: 17
+        node_version: [22, 24, 26]
+        # 17 is the `graphql` devDependency; 16 is installed as the `graphql-16` npm alias and
+        # selected with `--mode graphql-16` (see vitest.config.ts)
+        graphql_version: [16, 17]
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
 
@@ -34,12 +29,8 @@ jobs:
           packageManager: 'pnpm'
           nodeVersion: ${{matrix.node_version}}
 
-      - name: Install graphql ${{matrix.graphql_version}}
-        if: matrix.graphql_version != 16
-        run: pnpm add -D graphql@${{matrix.graphql_version}}
-
       - name: Test
-        run: pnpm run test
+        run: pnpm run test:once --mode graphql-${{matrix.graphql_version}}
 
       - name: Build
         run: pnpm run build
