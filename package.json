@@ -43,13 +43,14 @@
     "lint": "ESLINT_USE_FLAT_CONFIG=false eslint --cache --cache-location node_modules/.cache/.eslintcache --ignore-path .gitignore .",
     "ci:lint": "ESLINT_USE_FLAT_CONFIG=false eslint --cache --cache-location node_modules/.cache/.eslintcache --ignore-path .gitignore . --output-file eslint_report.json --format json",
     "test": "vitest .",
+    "test:once": "vitest . --run",
     "prerelease": "pnpm run build",
     "release": "changeset publish",
     "json-schema": "typescript-json-schema src/types.ts IGraphQLConfig --out config-schema.json --ignoreErrors --required --titles && prettier --write config-schema.json"
   },
   "peerDependencies": {
     "cosmiconfig-toml-loader": "^1.0.0",
-    "graphql": "^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
+    "graphql": "^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0"
   },
   "peerDependenciesMeta": {
     "cosmiconfig-toml-loader": {
