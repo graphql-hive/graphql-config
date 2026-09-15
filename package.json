@@ -43,13 +43,16 @@
     "lint": "ESLINT_USE_FLAT_CONFIG=false eslint --cache --cache-location node_modules/.cache/.eslintcache --ignore-path .gitignore .",
     "ci:lint": "ESLINT_USE_FLAT_CONFIG=false eslint --cache --cache-location node_modules/.cache/.eslintcache --ignore-path .gitignore . --output-file eslint_report.json --format json",
     "test": "vitest .",
+    "test:once": "vitest . --run",
+    "test:graphql-16": "vitest . --run --mode graphql-16",
+    "test:all": "pnpm test:once && pnpm test:graphql-16",
     "prerelease": "pnpm run build",
     "release": "changeset publish",
     "json-schema": "typescript-json-schema src/types.ts IGraphQLConfig --out config-schema.json --ignoreErrors --required --titles && prettier --write config-schema.json"
   },
   "peerDependencies": {
     "cosmiconfig-toml-loader": "^1.0.0",
-    "graphql": "^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
+    "graphql": "^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0"
   },
   "peerDependenciesMeta": {
     "cosmiconfig-toml-loader": {
@@ -80,7 +83,8 @@
     "del": "8.0.1",
     "eslint": "9.39.4",
     "eslint-config-prettier": "10.1.8",
-    "graphql": "16.13.1",
+    "graphql": "17.0.2",
+    "graphql-16": "npm:graphql@16.14.2",
     "husky": "9.1.7",
     "lint-staged": "15.5.2",
     "make-dir": "5.1.0",
