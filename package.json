@@ -45,6 +45,7 @@
     "test": "vitest .",
     "test:once": "vitest . --run",
     "test:graphql-16": "vitest . --run --mode graphql-16",
+    "test:all": "pnpm test:once && pnpm test:graphql-16",
     "prerelease": "pnpm run build",
     "release": "changeset publish",
     "json-schema": "typescript-json-schema src/types.ts IGraphQLConfig --out config-schema.json --ignoreErrors --required --titles && prettier --write config-schema.json"
