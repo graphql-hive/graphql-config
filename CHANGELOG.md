@@ -1,5 +1,14 @@
 # Change log
 
+## 5.1.7
+
+### Patch Changes
+
+- [#1793](https://github.com/graphql-hive/graphql-config/pull/1793) [`c55dbbf`](https://github.com/graphql-hive/graphql-config/commit/c55dbbf014e46a1ec6159d61b8a7f4ab84e0a95f) Thanks [@jonathanawesome](https://github.com/jonathanawesome)! - dependencies updates:
+  - Updated dependency [`graphql@^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0` ↗︎](https://www.npmjs.com/package/graphql/v/0.11.0) (from `^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0`, in `peerDependencies`)
+
+- [#1793](https://github.com/graphql-hive/graphql-config/pull/1793) [`c55dbbf`](https://github.com/graphql-hive/graphql-config/commit/c55dbbf014e46a1ec6159d61b8a7f4ab84e0a95f) Thanks [@jonathanawesome](https://github.com/jonathanawesome)! - Widen the `graphql` peer dependency range to include `^17.0.0`
+
 ## 5.1.6
 
 ### Patch Changes
