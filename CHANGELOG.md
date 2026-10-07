@@ -1,5 +1,19 @@
 # Change log
 
+## 5.1.8
+
+### Patch Changes
+
+- [#1797](https://github.com/graphql-hive/graphql-config/pull/1797) [`a2e6bd2`](https://github.com/graphql-hive/graphql-config/commit/a2e6bd22581b14ca4aa73e8523e0e8c6b248871a) Thanks [@eddeee888](https://github.com/eddeee888)! - Bump `@graphql-tools/*` dependencies to drop `@graphql-tools/utils` 11 from the dependency tree ([GHSA-7mx3-vvmw-hjmv](https://github.com/advisories/GHSA-7mx3-vvmw-hjmv))
+
+- [#1797](https://github.com/graphql-hive/graphql-config/pull/1797) [`a2e6bd2`](https://github.com/graphql-hive/graphql-config/commit/a2e6bd22581b14ca4aa73e8523e0e8c6b248871a) Thanks [@eddeee888](https://github.com/eddeee888)! - dependencies updates:
+  - Updated dependency [`@graphql-tools/graphql-file-loader@^8.1.22` ↗︎](https://www.npmjs.com/package/@graphql-tools/graphql-file-loader/v/8.1.22) (from `^8.0.0`, in `dependencies`)
+  - Updated dependency [`@graphql-tools/json-file-loader@^8.0.36` ↗︎](https://www.npmjs.com/package/@graphql-tools/json-file-loader/v/8.0.36) (from `^8.0.0`, in `dependencies`)
+  - Updated dependency [`@graphql-tools/load@^8.1.19` ↗︎](https://www.npmjs.com/package/@graphql-tools/load/v/8.1.19) (from `^8.1.0`, in `dependencies`)
+  - Updated dependency [`@graphql-tools/merge@^9.2.6` ↗︎](https://www.npmjs.com/package/@graphql-tools/merge/v/9.2.6) (from `^9.0.0`, in `dependencies`)
+  - Updated dependency [`@graphql-tools/url-loader@^9.1.12` ↗︎](https://www.npmjs.com/package/@graphql-tools/url-loader/v/9.1.12) (from `^9.0.0`, in `dependencies`)
+  - Updated dependency [`@graphql-tools/utils@^12.0.3` ↗︎](https://www.npmjs.com/package/@graphql-tools/utils/v/12.0.3) (from `^11.0.0`, in `dependencies`)
+
 ## 5.1.7
 
 ### Patch Changes
