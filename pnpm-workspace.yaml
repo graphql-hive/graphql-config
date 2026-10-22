@@ -1,0 +1,6 @@
+allowBuilds:
+  esbuild: true
+overrides:
+  glob: 11.1.0
+patchedDependencies:
+  vite: patches/vite.patch
