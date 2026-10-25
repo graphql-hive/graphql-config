@@ -35,7 +35,7 @@ And if this is your first time contributing to this project, please do read our 
 
 ### Code of Conduct
 
-Help us keep GraphQL Config open and inclusive. Please read and follow our [Code of Conduct](https://github.com/the-guild-org/Stack/blob/master/CODE_OF_CONDUCT.md) as adopted from [Contributor Covenant](https://www.contributor-covenant.org/)
+Help us keep GraphQL Config open and inclusive. Please read and follow our [Code of Conduct](https://github.com/the-guild-org/Stack/blob/master/CODE_OF_CONDUCT.md) as adopted from [Contributor Covenant](https://www.contributor-covenant.org/).
 
 ### License
 
