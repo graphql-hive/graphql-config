@@ -234,6 +234,38 @@ runTests({ async: loadConfig, sync: loadConfigSync })((load, mode) => {
       expect(config.getProjectForFile('./documents/baz.graphql').name).toBe('baz');
     });
 
+    test('absolute pointers', async () => {
+      const resolve = (pointer: string) => path.resolve(temp.dir, pointer);
+      const absolute = (pointer: string) => JSON.stringify(resolve(pointer));
+      temp.createFile(
+        '.graphqlrc',
+        `
+        projects:
+          schema:
+            schema: ${absolute('./schema.graphql')}
+          documents:
+            documents: ${absolute('./documents/*.graphql')}
+          outside:
+            schema: ${absolute('../shared/api.graphql')}
+          included:
+            include: ${absolute('./src/**/*.ts')}
+          excluded:
+            include: ./lib/**/*.ts
+            exclude: ${absolute('./lib/ignored/**')}`,
+      );
+
+      const config = await load({ rootDir: temp.dir });
+
+      expect(config.getProject('schema').match(resolve('./schema.graphql'))).toBe(true);
+      expect(config.getProject('schema').match('./schema.graphql')).toBe(true);
+      expect(config.getProject('schema').match(resolve('./other.graphql'))).toBe(false);
+      expect(config.getProject('documents').match(resolve('./documents/foo.graphql'))).toBe(true);
+      expect(config.getProject('outside').match(resolve('../shared/api.graphql'))).toBe(true);
+      expect(config.getProject('included').match(resolve('./src/component.ts'))).toBe(true);
+      expect(config.getProject('excluded').match(resolve('./lib/component.ts'))).toBe(true);
+      expect(config.getProject('excluded').match(resolve('./lib/ignored/component.ts'))).toBe(false);
+    });
+
     test('consider include', async () => {
       temp.createFile(
         '.graphqlrc',
