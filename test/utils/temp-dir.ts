@@ -31,10 +31,12 @@ export class TempDir {
     const relativeParent = path.relative(process.cwd(), parent);
 
     /**
-     * Each temp directory will be unique to the test file.
-     * This ensures that temp files/dirs won't cause side effects for other tests.
+     * Each temp directory will be unique to the test file and graphql version (vitest project).
+     * This ensures that temp files/dirs won't cause side effects for other tests, including the
+     * same test file running in parallel against another graphql version.
      */
-    this.dir = path.resolve(tempDir, 'cosmiconfig', `${relativeParent}-dir`);
+    const graphqlVersion = process.env.GRAPHQL_VERSION ?? 'default';
+    this.dir = path.resolve(tempDir, 'cosmiconfig', `graphql-v${graphqlVersion}`, `${relativeParent}-dir`);
 
     // create directory
     makeDirectorySync(this.dir);

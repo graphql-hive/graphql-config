@@ -10,16 +10,14 @@ on:
 
 jobs:
   test:
-    name: Node ${{matrix.node_version}} on ${{matrix.os}} (graphql ${{matrix.graphql_version}})
+    # every test runs against all supported graphql versions, see `vitest.config.ts`
+    name: Node ${{matrix.node_version}} on ${{matrix.os}}
     runs-on: ${{matrix.os}}
     strategy:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest]
         node_version: [22, 24, 26]
-        # 17 is the `graphql` devDependency; 16 is installed as the `graphql-16` npm alias and
-        # selected with `--mode graphql-16` (see vitest.config.ts)
-        graphql_version: [16, 17]
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
 
@@ -30,7 +28,7 @@ jobs:
           nodeVersion: ${{matrix.node_version}}
 
       - name: Test
-        run: pnpm run test:once --mode graphql-${{matrix.graphql_version}}
+        run: pnpm run test:once
 
       - name: Build
         run: pnpm run build
